@@ -1,3 +1,10 @@
+This website app shows Top 5 Netflix Shows on click of netflix button and shows Top 5 Amazon Shows on click of amazon button.
+Tech Stack: HTML, CSS, JavaScript, ReactJS
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
