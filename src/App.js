@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import NetflixCard from "./NetflixCard";
+import AmazonCard from "./AmazonCard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+
+  let [favouriteShow, setFav] = useState("netflix");
+  let [flag, setFlag] = useState(0);
+
+  const Netflix_clicked = () => {
+    setFlag(0);
+    setFav("netflix");
+  }
+
+  const Amazon_clicked = () => {
+    setFlag(1);
+    setFav("amazon");
+  }
+
+  return(
+      <>
+      <div className="btnDiv">
+      <button disabled = {(flag === 0) ? true : false} onClick={Netflix_clicked} className="netflixBtn">Netflix Original</button>
+      <button disabled = {(flag === 1) ? true : false} onClick={Amazon_clicked} className="amazonBtn">Amazon Prime</button>
+      </div>
+      {(favouriteShow === "netflix") ? <NetflixCard /> : <AmazonCard />}
+      </>
+  )
 }
 
 export default App;
