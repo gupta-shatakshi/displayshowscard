@@ -1,6 +1,11 @@
 This website app shows Top 5 Netflix Shows on click of netflix button and shows Top 5 Amazon Shows on click of amazon button.
 Tech Stack: HTML, CSS, JavaScript, ReactJS
 
+<img src="https://user-images.githubusercontent.com/85827044/126835547-fb5922e5-debb-488d-b9e0-2758cb479af4.png" width="300px" height="250px">
+<img src="https://user-images.githubusercontent.com/85827044/126835554-b5850524-acf6-44ad-a492-6714da2383bb.png" width="300px" height="250px">
+<img src="https://user-images.githubusercontent.com/85827044/126835558-e0889c95-ed4a-45ba-be25-c6749d4e3dd8.png" width="300px" height="250px">
+
+
 
 
 
